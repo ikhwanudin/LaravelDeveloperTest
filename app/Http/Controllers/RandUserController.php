@@ -8,6 +8,7 @@ use App\Jobs\GetRandUserJob;
 class RandUserController extends Controller
 {
 
+    // run manual job
     
     public function index()
     {

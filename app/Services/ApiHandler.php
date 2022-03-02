@@ -11,7 +11,8 @@ class ApiHandler{
     /**
      * Get Random User Data from Api
      * 
-     * @return object
+     * todo: add throw() if client or server error
+     * @return json|array
      */
 
     public function getRandUserDataFromApi()
@@ -23,7 +24,7 @@ class ApiHandler{
             return $exception instanceof ConnectionException;
         })->get($endpoint);
 
-        //add throw() if client or server error
+        //todo: add throw() if client or server error
 
         //convert response to object
         $response = $response->json();

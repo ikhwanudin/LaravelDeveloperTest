@@ -31,7 +31,8 @@ class GetRandUserJob implements ShouldQueue
 
     /**
      * Execute the job.
-     *
+     * 
+     * todo: add job fail handling
      * @return void
      */
     public function handle()
